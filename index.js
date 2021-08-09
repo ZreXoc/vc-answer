@@ -23,7 +23,7 @@ function getAnswer() {
                 end = tasks[tasks.length - 1].content_id; //获取课时对应题号
             console.log(start, end);
 
-            let taskAnswer = answer.slice(start - first-1, end - first); //截取答案
+            let taskAnswer = answer.slice(start - first+1, end - first+2); //截取答案
             const d = $("#display-answer");
             d.empty();
             taskAnswer.forEach((ans, i) => {
